@@ -1,6 +1,7 @@
 body{
     background-color: violet;
     text-align: center;
+    font-size: 200%;
 }
 body header nav ul {
     display: flex;
@@ -9,4 +10,12 @@ body header nav ul {
 body header nav ul li{
     list-style: none;
     padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+li:hover{
+    color: blue;
+}
+h1{
+    text-transform: uppercase;
+    color: darkblue;
 }
