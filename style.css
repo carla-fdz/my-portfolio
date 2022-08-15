@@ -1,0 +1,12 @@
+body{
+    background-color: violet;
+    text-align: center;
+}
+body header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+body header nav ul li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+}
