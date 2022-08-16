@@ -5,36 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- Agregar ./ para evitar  errores-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- Agregar favicon -->
+    <link rel="shortcut icon" href="./assets/profile-ico.ico" type="image/x-icon">
+        <!-- Agregar ./ para evitar  errores-->
     <title>Mi portfolio</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li>Inicio</li>
-                <li>Información</li>
-                <li>Contacto</li>
+                <li><a href="./index.html" class="navbar__a">Inicio</a></li>
+                <li><a href="#info" class="navbar__a">Sobre mi</a></li>
+                <li><a href="#contacto" class="navbar__a">Contacto</a> </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Carla Fernandez</h1>
-            <h2>¿Quién soy?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est id tenetur architecto rerum nemo praesentium officia pariatur non iure aliquid rem, fuga sit eaque quos reprehenderit itaque labore adipisci quod.</p>
+        <section class="info" id="info">
+            <img src="./assets/profile.png" alt="Foto de perfil" class="info__profile">
+            <div class="info__description">
+                <h1>Carla Fernandez</h1>
+                <h2>Estudiante de desarrollo web</h2>
+                <p class="info__description--paragraph">Hola! Tengo 24 años, soy estudiante de desarrollo web en el programa <strong>codo a codo 4.0</strong>. Mi primer contacto con la programación fue en enero 2022 en cursos y material que fui encontrando en internet pero esperaba con muchas ansias quedar en el programa (Este es mi segundo intento para ingresar y lo logré!). También soy estudiante de 2do año de la carrera de Lic. en Economía en la UNLP y enfermera recibida en la Universidad de Chubut. Soy de Puerto Madryn (Chubut) y actualmente vivo en La Plata.</p>
+            </div>
+
         </section>
-        <section>
+        <section id="contacto">
             <h2>Contacto</h2>
-            <form action="" method="post">
-                <label for=""></label>
+            <form action="" method="post" >
+                <table class="form">
+                    <tr>
+                        <td>
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Nombre y apellido">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" placeholder="correo@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="number">Teléfono/celular</label>
+                            <input type="tel"  id="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="text">Consulta</label>
+                            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="reset" class="button mt-2">Borrar</button>
+                            <button type="submit" class="button mt-2">Enviar</button>
+                        </td>
+                    </tr>
+                </table>
             </form>
         </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.02542106692!2d-57.988189830851866!3d-34.92052327676543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1660663866159!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <p>Copyright &#169 2022. Carla Fernandez</p>
+        </div>
+    </footer>
 </body>
 </html>
